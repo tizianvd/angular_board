@@ -11,6 +11,6 @@ export class CreatePostComponent {
 
   sendPost() {
     console.log("test");
-    this.postService.sendPost()
+    this.postService.sendPost().subscribe(data => console.log(data));
   }
 }

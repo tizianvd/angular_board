@@ -20,6 +20,6 @@ export class PostService {
   }
 
   sendPost() : Observable<any> {
-    return this.http.post(BASE_URL, {title: "Test", content: "Test2"});
+    return this.http.post(BASE_URL, {title: "Test", content: "Test2"})
   }
 }
