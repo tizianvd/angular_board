@@ -18,4 +18,8 @@ export class PostService {
   getPosts() : Observable<any> {
     return this.http.get(BASE_URL);
   }
+
+  sendPost() : Observable<any> {
+    return this.http.post(BASE_URL, {title: "Test", content: "Test2"});
+  }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PostService } from 'src/app/services/post.service';
 
 @Component({
   selector: 'app-create-post',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-post.component.css']
 })
 export class CreatePostComponent {
+  constructor(private postService : PostService){}
 
+  sendPost() {
+    this.postService.sendPost()
+  }
 }
