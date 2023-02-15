@@ -10,6 +10,7 @@ export class CreatePostComponent {
   constructor(private postService : PostService){}
 
   sendPost() {
+    console.log("test");
     this.postService.sendPost()
   }
 }
